@@ -14,6 +14,10 @@
 		0419B33021AD8AB000D31B41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0419B32E21AD8AB000D31B41 /* LaunchScreen.storyboard */; };
 		0419B33B21AD8AB000D31B41 /* Inventory_AmanotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0419B33A21AD8AB000D31B41 /* Inventory_AmanotesTests.swift */; };
 		0419B34621AD8AB000D31B41 /* Inventory_AmanotesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0419B34521AD8AB000D31B41 /* Inventory_AmanotesUITests.swift */; };
+		0419B35621AD8CEC00D31B41 /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0419B35521AD8CEC00D31B41 /* ItemsViewController.swift */; };
+		0419B35E21AD944100D31B41 /* ItemsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0419B35C21AD944100D31B41 /* ItemsViewCell.swift */; };
+		0419B35F21AD944100D31B41 /* ItemsViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0419B35D21AD944100D31B41 /* ItemsViewCell.xib */; };
+		0481D93921AD9B3F00605380 /* HelperUIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0481D93821AD9B3F00605380 /* HelperUIImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		0419B34121AD8AB000D31B41 /* Inventory AmanotesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Inventory AmanotesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0419B34521AD8AB000D31B41 /* Inventory_AmanotesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inventory_AmanotesUITests.swift; sourceTree = "<group>"; };
 		0419B34721AD8AB000D31B41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0419B35521AD8CEC00D31B41 /* ItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
+		0419B35C21AD944100D31B41 /* ItemsViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsViewCell.swift; sourceTree = "<group>"; };
+		0419B35D21AD944100D31B41 /* ItemsViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemsViewCell.xib; sourceTree = "<group>"; };
+		0481D93821AD9B3F00605380 /* HelperUIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperUIImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +105,8 @@
 		0419B32421AD8AAE00D31B41 /* Inventory Amanotes */ = {
 			isa = PBXGroup;
 			children = (
+				0481D93721AD9AFE00605380 /* Helpers+Extension */,
+				0419B35321AD8CB900D31B41 /* MVVM */,
 				0419B32521AD8AAE00D31B41 /* AppDelegate.swift */,
 				0419B32721AD8AAE00D31B41 /* ViewController.swift */,
 				0419B32921AD8AAE00D31B41 /* Main.storyboard */,
@@ -123,6 +133,40 @@
 				0419B34721AD8AB000D31B41 /* Info.plist */,
 			);
 			path = "Inventory AmanotesUITests";
+			sourceTree = "<group>";
+		};
+		0419B35321AD8CB900D31B41 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				0419B35721AD905F00D31B41 /* Views */,
+				0419B35421AD8CC400D31B41 /* ViewControllers */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		0419B35421AD8CC400D31B41 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0419B35521AD8CEC00D31B41 /* ItemsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0419B35721AD905F00D31B41 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0419B35C21AD944100D31B41 /* ItemsViewCell.swift */,
+				0419B35D21AD944100D31B41 /* ItemsViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0481D93721AD9AFE00605380 /* Helpers+Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0481D93821AD9B3F00605380 /* HelperUIImageView.swift */,
+			);
+			path = "Helpers+Extension";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +276,7 @@
 				0419B33021AD8AB000D31B41 /* LaunchScreen.storyboard in Resources */,
 				0419B32D21AD8AB000D31B41 /* Assets.xcassets in Resources */,
 				0419B32B21AD8AAE00D31B41 /* Main.storyboard in Resources */,
+				0419B35F21AD944100D31B41 /* ItemsViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,7 +302,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0419B32821AD8AAE00D31B41 /* ViewController.swift in Sources */,
+				0419B35621AD8CEC00D31B41 /* ItemsViewController.swift in Sources */,
 				0419B32621AD8AAE00D31B41 /* AppDelegate.swift in Sources */,
+				0419B35E21AD944100D31B41 /* ItemsViewCell.swift in Sources */,
+				0481D93921AD9B3F00605380 /* HelperUIImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
